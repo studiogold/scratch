@@ -10,6 +10,7 @@
 *@license   GPL-2.0+
 */
 
+// Load child theme textdomain.
 load_child_theme_textdomain('scratch');
 
 add_action('genesis_setup', 'scratch_setup');
