@@ -45,12 +45,16 @@ function scratch_setup() {
     // Add them support for footer widgets.
     add_theme_support( 'genesis-footer-widgets', 3);
     
-   // Unregister layouts that use secondary sidebar.
+    // Unregister layouts that use secondary sidebar.
     genesis_unregister_layout( 'content-sidebar-sidebar' );
     genesis_unregister_layout( 'sidebar-content-sidebar' );
     genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-  // Unregister secondary sidebar.
+    // Unregister secondary sidebar.
     unregister_sidebar( 'sidebar-alt' );
+    
+    
+   // Add theme widget areas.
+    include_once( get_stylesheet_directory() . '/includes/widget-area.php' );
     
 }
