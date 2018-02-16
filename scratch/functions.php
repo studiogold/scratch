@@ -58,3 +58,12 @@ function scratch_setup() {
 	include_once( get_stylesheet_directory() . '/includes/widget-areas.php' );
 
 }
+
+add_action( 'wp_enqueue_scripts', 'scratch_equeue_styles' );
+function scratch_equeue_styles() {
+
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Slab:400,700|Anton')
+}
+    
+    
+    
